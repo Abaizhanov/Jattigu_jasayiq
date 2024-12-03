@@ -1,0 +1,19 @@
+INFO 2024-12-04 01:24:29,404 user Token requested by user: Unknown
+INFO 2024-12-04 01:24:30,192 user Token successfully generated for user: Unknown
+INFO 2024-12-04 01:28:44,283 user Token requested by user: akzhol@akzhol.kz
+INFO 2024-12-04 01:28:45,082 user Token successfully generated for user: akzhol@akzhol.kz
+INFO 2024-12-04 01:31:00,638 user New user registration attempt: hello5@hello.kz
+INFO 2024-12-04 01:31:01,408 user User registered successfully: hello5@hello.kz
+INFO 2024-12-04 01:33:53,919 user New user registration attempt: ernur@hni.com
+INFO 2024-12-04 01:33:54,745 user User registered successfully: ernur@hni.com
+INFO 2024-12-04 01:35:18,735 user New user registration attempt: helll@k.kz
+INFO 2024-12-04 01:35:19,455 user User registered successfully: helll@k.kz
+INFO 2024-12-04 01:37:25,623 user Token requested by user: helll@k.kz
+INFO 2024-12-04 01:37:26,469 user Token successfully generated for user: helll@k.kz
+INFO 2024-12-04 01:38:36,484 user Token requested by user: Aisha@kbtu.kz
+INFO 2024-12-04 01:40:39,780 user New user registration attempt: aisha@kbtu.kz
+INFO 2024-12-04 01:40:40,452 user User registered successfully: aisha@kbtu.kz
+INFO 2024-12-04 01:41:16,865 user New user registration attempt: aisha1@kbtu.kz
+INFO 2024-12-04 01:41:17,546 user User registered successfully: aisha1@kbtu.kz
+INFO 2024-12-04 01:42:17,869 user Token requested by user: aisha1@kbtu.kz
+INFO 2024-12-04 01:42:18,713 user Token successfully generated for user: aisha1@kbtu.kz
