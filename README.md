@@ -23,13 +23,14 @@ For the backend (Django):
 2. Migrate database
 
    python manage.py makemigrations
+   
    python manage.py migrate
 
-3.To be able to access the Django admin interface, create a superuser:
+4. To be able to access the Django admin interface, create a superuser:
    
    python manage.py createsuperuser
 
-4. Start the Django development server to verify that everything is working:
+5. Start the Django development server to verify that everything is working:
 
    python manage.py runserver
 
@@ -42,5 +43,6 @@ For the frontend (React):
 
    npm install
 
-4. Start the React development server to verify that everything is working:
+3. Start the React development server to verify that everything is working:
+
    npm start
