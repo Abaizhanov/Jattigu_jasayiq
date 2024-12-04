@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'blog',
     'exercise_management',
     'rest_framework',
+    'analytics',
     'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
     'drf_yasg',
@@ -63,7 +64,9 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'analytics/templates',  # Add this line if it's missing
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -175,6 +178,10 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',  # Your frontend URL
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'

@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 import swal from 'sweetalert2';
+import logo from '../assets/logo_login.jpg';
 
 function Loginpage() {
   const { user, loginUser } = useContext(AuthContext);
@@ -46,9 +47,9 @@ function Loginpage() {
                 <div className="row g-0">
                   <div className="col-md-6 col-lg-5 d-none d-md-block">
                     <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                      src={logo}
                       alt="login form"
-                      className="img-fluid"
+                      className="img-fluid object-cover w-full h-full rounded-l-xl"
                       style={{ borderRadius: '1rem 0 0 1rem' }}
                     />
                   </div>

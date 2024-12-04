@@ -63,22 +63,10 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            to="/about"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            About
-          </Link>
-          <Link
             to="/exercises"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Exercises
-          </Link>
-          <Link
-            to="/nutritions"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            Nutritions
           </Link>
           <Link
             to="/blog"

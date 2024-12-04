@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Analytics Overview</title>
+  </head>
+  <body>
+    <h1>Analytics Overview</h1>
+
+    <h2>Total Posts: {{ total_posts }}</h2>
+    <h2>Total Comments: {{ total_comments }}</h2>
+
+    <h3>User Demographics</h3>
+    <h4>Age Groups:</h4>
+    <ul>
+      {% for group in age_groups %}
+      <li>Age: {{ group.age }} - Users: {{ group.count }}</li>
+      {% endfor %}
+    </ul>
+
+    <h4>Gender Distribution:</h4>
+    <ul>
+      {% for gender in gender_distribution %}
+      <li>{{ gender.gender }}: {{ gender.count }}</li>
+      {% endfor %}
+    </ul>
+
+    <h4>Fitness Goal Distribution:</h4>
+    <ul>
+      {% for goal in fitness_goal_distribution %}
+      <li>{{ goal.fitness_goal }}: {{ goal.count }}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>User Activity</h3>
+    <ul>
+      {% for user in user_activity %}
+      <li>
+        {{ user.email }}: {{ user.num_posts }} posts, {{ user.num_comments }}
+        comments
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h3>Gender Distribution Chart:</h3>
+    <img
+      src="data:image/png;base64,{{ gender_chart }}"
+      alt="Gender Distribution Chart"
+    />
+  </body>
+</html>

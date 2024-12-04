@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
+import logo from '../assets/logo_regis.jpg';
 
 function Registerpage() {
   const [email, setEmail] = useState('');
@@ -45,7 +46,7 @@ function Registerpage() {
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="hidden md:block">
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                  src={logo}
                   alt="login form"
                   className="h-full w-full object-cover rounded-l-lg"
                 />

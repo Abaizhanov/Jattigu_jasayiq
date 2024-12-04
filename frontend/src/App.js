@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import PrivateRoute from './utils/PrivateRoute';
 import { AuthProvider } from './context/AuthContext';
@@ -10,6 +9,8 @@ import Loginpage from './views/Loginpage';
 import Dashboard from './views/Dashboard';
 import Navbar from './views/Navbar';
 import BlogPage from './views/BlogPage';
+import ExercisePage from './views/ExercisePage';
+import ExerciseItem from './components/ExerciseItem'; // Import the new ExerciseItem component
 
 function App() {
   return (
@@ -39,6 +40,16 @@ function App() {
           <Route
             component={BlogPage}
             path="/blog"
+            exact
+          />
+          <Route
+            component={ExercisePage}
+            path="/exercises"
+            exact
+          />
+          <Route
+            component={ExerciseItem}
+            path="/exercises/:id"
             exact
           />
         </Switch>
